@@ -16,7 +16,7 @@ Please refer to birth_rate_analysis.ipynb for the analysis.
 
 ## Conclusion
 
-With multiple linear regression without interaction terms, the following predictors have significant impacts on the response variable (birth rate):
+With multiple linear regression without interaction terms, out of four predictors, the following predictors have significant impacts on the response variable (birth rate):
 
 - Happiness index
 - Unemployment
@@ -24,7 +24,7 @@ With multiple linear regression without interaction terms, the following predict
 
 The 4 predictors in the model were able to explain 52.06% of the model variations in the test set.
 
-Through the incorporation of the interaction terms and variable selection, the following variables show significant impacts on the response variable (birth rate):
+Through the incorporation of the interaction terms and variable selection, out of the five predictors, the following variables show significant impacts on the response variable (birth rate):
 
 - Happiness index
 - GDP
@@ -33,7 +33,7 @@ Through the incorporation of the interaction terms and variable selection, the f
 
 (The only predictor that does not have significant impact was the interaction term between GDP and unemployment rate)
 
-Noted that the r_squared score, which represents how well these predictors were able to explain the model variations, increases to 64.00% in the test set with interaction term in comparison to 52.06%. In addition, the interaction term model showed a decrease in the RSE (residuals squared errors), represented the errors not explained by the model, to RSE 6.59 in the test set from RSE 7.47 in the test set from the original model.
+Noted that the r_squared score, which represents how well these predictors were able to explain the model variations, increases to 64.00% in the test set with interaction term in comparison to 52.06% for the model without the interaction terms. This indicates that the interaction terms have impacts on the birth rates. In addition, the interaction term model showed a decrease in the RSE (residuals squared errors), represented the errors not explained by the model, to RSE 6.59 in the test set from RSE 7.47 in the test set from the original model.
 
 Noted that happiness index also includes measurements of the following: Freedom to make life choices, social support, healthy life expectancy, perceptions of corruptions, and generosity. Due to high collinearity between this predictors, only happiness index was included in the model.
 
