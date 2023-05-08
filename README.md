@@ -8,7 +8,7 @@ An analysis on the effects of the following factors on birth rate:
 - Social: Happiness index, Social support score, life expectancy, freedom to make life choices, generosity,perception of corruption
 - Jobs: Unemployment rate
 
-Noted that interaction terms were considered for variables with high correlation. A variable selection process was conducted based on p-value, and incorporate only 6 variables in the interaction terms model due to the limited observations of the training set of (130 observations). This aims at limiting overfitting the model as well as ensuring the predictor to observations ratios of 1:15.
+Noted that interaction terms were considered for all variables in the original model. A variable selection process was conducted based on p-value, and incorporate only 6 variables in the interaction terms model due to the limited observations of the training set of (130 observations). This aims at limiting overfitting the model as well as ensuring the predictor to observations ratios of 1:15.
 
 ## Analysis
 
