@@ -22,7 +22,7 @@ With multiple linear regression without interaction terms, the following predict
 - Unemployment
 - Inflation
 
-Noted that the increase in social support and healthy life expectancy increase the birth rates. The 4 predictors in the model were able to explain 49.45% of the model variations in the test set.
+Noted that the increase in social support and healthy life expectancy increase the birth rates. The 4 predictors in the model were able to explain 52.06% of the model variations in the test set.
 
 Through the incorporation of the interaction terms and variable selection, the following variables show significant impacts on the response variable (birth rate):
 
@@ -31,9 +31,11 @@ Through the incorporation of the interaction terms and variable selection, the f
 - Unemployment rate
 - Interaction term between GDP and happiness index
 
-Noted that the r_squared score, which represents how well these predictors were able to explain the model variations, increases to 57.50% in the test set with interaction term in comparison to 49.45%. In addition, the interaction term model showed a decrease in the RSE (residuals squared errors), represented the errors not explained by the model, to RSE 7.63 in the test set from RSE 8.17 in the test set from the original model.
+Noted that the r_squared score, which represents how well these predictors were able to explain the model variations, increases to 64.00% in the test set with interaction term in comparison to 52.06%. In addition, the interaction term model showed a decrease in the RSE (residuals squared errors), represented the errors not explained by the model, to RSE 6.59 in the test set from RSE 7.47 in the test set from the original model.
 
-Further noted that the happiness index also includes insights from variables like: Freedom to make life choices, Healthy life expectancy, Perceptions of corruptions, and generosity. Due to high collinearity between these variables, only happiness index was included as predictor.
+Noted that happiness index also includes measurements of the following: Freedom to make life choices, social support, healthy life expectancy, perceptions of corruptions, and generosity. Due to high collinearity between this predictors, only happiness index was included in the model.
+
+Based on the results. An interesting insight is that the coefficient for happiness index in both models is negative, indicating high happiness index negatively affect the birth rate. Taken into account the high correlation between happiness index and freedom to make life choices, and other social aspects, there is a possibility that high level of social support and freedom to make life choices criteria from the specific country encourages individuals to live the life that they prefer, with or without children, thus affecting the birth rates.
 
 ## Data Sources references
 
