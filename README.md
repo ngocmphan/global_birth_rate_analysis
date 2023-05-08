@@ -37,7 +37,7 @@ Noted that the r_squared score, which represents how well these predictors were 
 
 Noted that happiness index also includes measurements of the following: Freedom to make life choices, social support, healthy life expectancy, perceptions of corruptions, and generosity. Due to high collinearity between this predictors, only happiness index was included in the model.
 
-Based on the results. An interesting insight is that the coefficient for happiness index in both models is negative, indicating high happiness index negatively affect the birth rate. Taken into account the high correlation between happiness index and freedom to make life choices, and other social aspects, there is a possibility that high level of social support and freedom to make life choices criteria from the specific country encourages individuals to live the life that they prefer, with or without children, thus affecting the birth rates.
+Based on the results. An interesting insight is that the coefficient for happiness index in both models is negative, indicating high happiness index negatively affect the birth rate. Taken into account the high correlation between happiness index and freedom to make life choices, and other social aspects, there is a possibility that high level of social support and freedom to make life choices criteria from the specific country encourages individuals to live the life that they prefer, with or without children, thus affecting the birth rates. Furthermore, unemployment rate and inflation rates are also predictors that negatively affect the birth rates in the models.
 
 ## Data Sources references
 
