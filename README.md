@@ -8,7 +8,7 @@ An analysis on the effects of the following factors on birth rate:
 - Social: Happiness index, Social support score, life expectancy, freedom to make life choices, generosity,perception of corruption
 - Jobs: Unemployment rate
 
-Noted that interaction terms were considered for all variables in the original model. A variable selection process was conducted based on p-value, and incorporate only 6 variables in the interaction terms model due to the limited observations of the training set of (130 observations). This aims at limiting overfitting the model as well as ensuring the predictor to observations ratios of 1:15.
+Due to collinearity, the original model only includes gdpPerCapita, happiness index, inflation, and unemployment rate. In addition, interaction terms were considered for all variables in the original model. A variable selection process was conducted based on p-value, and incorporate only 5 variables in the interaction terms model due to the limited observations of the training set of (130 observations). This aims at limiting overfitting the model as well as ensuring the predictor to observations ratios of 1:15.
 
 ## Analysis
 
@@ -22,7 +22,7 @@ With multiple linear regression without interaction terms, the following predict
 - Unemployment
 - Inflation
 
-Noted that the increase in social support and healthy life expectancy increase the birth rates. The 4 predictors in the model were able to explain 52.06% of the model variations in the test set.
+The 4 predictors in the model were able to explain 52.06% of the model variations in the test set.
 
 Through the incorporation of the interaction terms and variable selection, the following variables show significant impacts on the response variable (birth rate):
 
@@ -30,6 +30,8 @@ Through the incorporation of the interaction terms and variable selection, the f
 - GDP
 - Unemployment rate
 - Interaction term between GDP and happiness index
+
+(The only predictor that does not have significant impact was the interaction term between GDP and unemployment rate)
 
 Noted that the r_squared score, which represents how well these predictors were able to explain the model variations, increases to 64.00% in the test set with interaction term in comparison to 52.06%. In addition, the interaction term model showed a decrease in the RSE (residuals squared errors), represented the errors not explained by the model, to RSE 6.59 in the test set from RSE 7.47 in the test set from the original model.
 
